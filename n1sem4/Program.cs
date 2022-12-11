@@ -5,9 +5,13 @@ System.Console.WriteLine("Введите число А");
 int a = Convert.ToInt32(Console.ReadLine());
 System.Console.WriteLine("Введите число B");
 int b = Convert.ToInt32(Console.ReadLine());
-int c = a*a;
-for(int i = 0; i < b - 2; i++)
+int c = a * a;
+void Method()
 {
-   c = c*a;
+    for (int i = 0; i < b - 2; i++)
+    {
+        c = c * a;
+    }
 }
+Method();
 Console.WriteLine($"Число {a} в степени {b} равно {c} ");
